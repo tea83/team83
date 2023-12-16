@@ -117,34 +117,3 @@ This document outlines the process of generating MPNET text embeddings for a dat
 3. Call the `mpNet(df)` function, passing your dataframe as the argument.
 4. The function will print the shape of the generated embedding tensor and save it to the specified file.
 
-### Example
-
-```python
-import pandas as pd
-
-# Load your dataframe
-df = pd.read_csv('your_data.csv')
-
-# Generate MPNET embeddings
-text_mpnet_emb = mpNet(df)
-
-# Print the shape and save the embeddings
-print(text_mpnet_emb.shape)
-np.save('mpnet_embeddings.npy', text_mpnet_emb.cpu().numpy())
-
-
-### Output
-
-This script will print the shape of the embedding tensor (e.g., `(number_of_data_points, embedding_dimension)`) and save the corresponding numpy array to the specified file.
-
-### Modifications
-
-* You can adjust the `text_column` variable to specify the column containing the text data in your dataframe.
-* You can change the `model_name` and `device` arguments in `load_mpnet_model` to use a different MPNET model or choose between CPU and GPU execution.
-* You can modify the `batch_size` parameter in `generate_embeddings_for_text_dataframe` to trade-off memory usage and processing speed.
-
-I hope this markdown code provides a clear and concise overview of the script and its functionalities. Feel free to ask if you have any further questions!
-
-
-
-
