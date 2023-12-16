@@ -3,7 +3,7 @@
 
 ### Task 2- Generating Content
 
-#### 2.1 `ImageCaptionNotebook,ipynb` 
+#### 2.1 `ImageCaptionNotebook.ipynb` 
 - In this notebook,an open-source pretrained model (BLIP2) is utilized to generate relevant captions from images.
 
 
@@ -13,7 +13,7 @@
   - Finetuning: Bloom7b, a powerful model 176B model was used.Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
 
 
-#### 2.3 `Task_2_Inference,ipynb` 
+#### 2.3 `Task_2_Inference.ipynb` 
 - The finetuned model is used to generate prediction on test data.
 ## How to Use
 
