@@ -14,7 +14,7 @@ media content as well as create content that elicits the desired key performance
 from the audience.
 
 ## Abstract
-Simulating User Engagement on Social Media with Feature Extractors, Boosting Models, and LLMs This work tackles the dual challenge of behavior simulation (predicting user engagement on existing content) and content simulation (generating content that elicits desired engagement) by leveraging a powerful combination of multi modal feature extractors, gradient boosting regressors, FAISS, image captioning models and large language models (LLMs).
+Simulating User Engagement on Social Media with Feature Extractors, Boosting Models, and LLMs This work tackles the dual challenge of behavior simulation (predicting user engagement on existing content) and content simulation (generating content that elicits desired engagement) by leveraging a powerful combination of multi modal feature extractors, gradient boosting regressors, FAISS, image captioning models and large language models (LLMs).
 
 ## Overview
 This repository contains code and notebooks for two distinct tasks. The repository is organized into three main folders:
