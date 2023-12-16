@@ -10,7 +10,7 @@
 #### 2.2 `fine_tuning.ipynb` 
 - This notebook accomplishes two tasks:
   - Prompt_Engineering: Captions generated from the pretrained model are concatenated with inferred company, date-time for temporal relevance, and likes.
-  - Finetuning: Bloom7b, a powerful model 176B model was used.Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
+  - Finetuning: Bloom7b, a powerful model 176B model is used.Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
 
 
 #### 2.3 `Task_2_Inference.ipynb` 
