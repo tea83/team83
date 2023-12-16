@@ -3,19 +3,18 @@
 
 ### Task 2- Generating Content
 
-#### 2.1 `ImageCaptionNotebook` Folder
-- Inside this folder, there is a notebook (`ImageCaptionNotebook.ipynb`) where an open-source pretrained model (BLIP2) is utilized to generate relevant captions from images.
+#### 2.1 `ImageCaptionNotebook,ipynb` 
+- In this notebook,an open-source pretrained model (BLIP2) is utilized to generate relevant captions from images.
 
 
-#### 2.2 `fine_tuning` Folder
-- Inside this folder, there are two notebooks:
-  - `Prompt_Engineering.ipynb`: Captions generated from the pretrained model are concatenated with inferred company, date-time for temporal relevance, and likes. Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
-  - `Finetuning_Bloom_7b.ipynb`: The Stable Diffusion XL model is fine-tuned using Low-Rank Adaptive Weights (LoRA).
+#### 2.2 `fine_tuning.ipynb` 
+- This notebook accomplishes two tasks:
+  - Prompt_Engineering: Captions generated from the pretrained model are concatenated with inferred company, date-time for temporal relevance, and likes.
+  - Finetuning: Bloom7b, a powerful model 176B model was used.Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
 
 
-#### 2.3 `Task_2_Inference` Folder
-- This folder contains a notebook (`Task_2_Inference.ipynb`) where the finetuned model is employed to generate predictions on test data.
-
+#### 2.3 `Task_2_Inference,ipynb` 
+- The finetuned model is used to generate prediction on test data.
 ## How to Use
 
 1. Clone the repository to your local machine.
