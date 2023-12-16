@@ -50,17 +50,3 @@ This repository contains code and notebooks for two distinct tasks. The reposito
 
 Feel free to explore each folder and notebook for detailed implementation and documentation.
 
-## Contributors
-
-- List the contributors or mention that it is a solo project.
-
-## License
-
-- Specify the license under which the code is distributed.
-
-## Acknowledgments
-
-- Optionally, include acknowledgments or references to any external sources, libraries, or frameworks used in the project.
-
-Enjoy exploring and using the repository! If you have any questions or issues, feel free to reach out to the contributors.
-
