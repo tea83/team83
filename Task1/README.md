@@ -1,4 +1,4 @@
-### Task 1- Prediccting likes
+### Task 1- Predicting likes
 
 #### 1.1 `Embedding Extraction` Folder
 - This folder contains Jupyter notebooks for embedding extraction using CLIP, MPNET and EfficientNet models.
