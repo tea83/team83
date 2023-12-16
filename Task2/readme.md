@@ -52,4 +52,35 @@ The notebook defines a function (`image_captioner`) that takes an image path as 
 ## Caption Generation
 The notebook iterates through the DataFrame, generating captions for each image using the defined function. The progress is displayed using tqdm. The resulting DataFrame is then saved to a new CSV file (`captioned_dataset.csv`).
 
+# Fine-tuning Notebook Documentation
+
+This notebook focuses on fine-tuning a language model, specifically the `bigscience/bloom-7b1` model, for a tweet generation task. The fine-tuning process involves loading the pre-trained language model, configuring it, and training it on a custom dataset containing tweet-related information. Additionally, the notebook utilizes the `peft` library for efficient fine-tuning.
+
+## Colab Link
+You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Il0kWaqm-v6rtZZvU2cLROSUG-8YwXWN)
+
+## Dependencies
+- **datasets**: A library for working with various natural language processing datasets.
+- **bitsandbytes, accelerate, loralib**: Libraries for efficient training and fine-tuning of language models.
+- **transformers**: Hugging Face's Transformers library for natural language processing.
+- **peft**: Library for efficient training of transformers.
+
+## Model Fine-tuning
+The notebook starts by installing the required libraries and setting up the environment. It then loads the pre-trained `bigscience/bloom-7b1` language model, configures it, and fine-tunes it using the provided tweet dataset. The fine-tuning process involves freezing certain model parameters, enabling gradient checkpointing, and other configuration settings.
+
+## Efficient Fine-tuning with PEFT
+The notebook utilizes the `peft` library to enhance the efficiency of fine-tuning. It configures the PEFT model and prints the number of trainable parameters in the model.
+
+## Dataset Preparation
+The notebook downloads a dataset (`data.zip`) from Google Drive, extracts it, and reads it into a DataFrame (`final_captioned_dataset.xlsx`). It then preprocesses the DataFrame by removing unnecessary columns and splitting it into training and validation sets.
+
+## Tokenization and Data Preparation
+The notebook cleans and merges columns in the dataset, preparing it for training. It uses the Hugging Face `transformers` library for tokenization and creates a DatasetDict with training and validation datasets.
+
+## Model Training
+The notebook trains the language model using the `transformers.Trainer` class. It specifies training arguments, such as batch size, learning rate, and output directory. The training process is then executed, and the trained model is pushed to the Hugging Face Model Hub.
+
+## Inference with the Fine-tuned Model
+The notebook demonstrates how to load the fine-tuned model from the Hugging Face Model Hub and perform inference on a sample input.
+
 For further details and updates, refer to the notebook code and associated documentation in the provided Colab link.
