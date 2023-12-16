@@ -28,9 +28,6 @@ Feel free to explore each folder and notebook for detailed implementation and do
 
 This notebook focuses on image captioning using the Salesforce Blip Image Captioning model. The process involves reading a dataset from a CSV file, where each row contains information about an image, including the path to the image file. The notebook then uses the Blip Image Captioning model to generate captions for each image and saves the results in a new CSV file.
 
-## Colab Link
-You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OrionXV/InterIITAdobe/blob/main/task2/ImageCaptionNotebook.ipynb)
-
 ## Dependencies
 - **requests**: A library for making HTTP requests in Python.
 - **PIL**: Python Imaging Library for image processing.
@@ -55,9 +52,6 @@ The notebook iterates through the DataFrame, generating captions for each image 
 # Fine-tuning Notebook Documentation
 
 This notebook focuses on fine-tuning a language model, specifically the `bigscience/bloom-7b1` model, for a tweet generation task. The fine-tuning process involves loading the pre-trained language model, configuring it, and training it on a custom dataset containing tweet-related information. Additionally, the notebook utilizes the `peft` library for efficient fine-tuning.
-
-## Colab Link
-You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Il0kWaqm-v6rtZZvU2cLROSUG-8YwXWN)
 
 ## Dependencies
 - **datasets**: A library for working with various natural language processing datasets.
@@ -87,8 +81,6 @@ The notebook demonstrates how to load the fine-tuned model from the Hugging Face
 
 This notebook is focused on performing inference using a fine-tuned language model (`bloom-7b1-lora-tagger-for-tweet-generation`) on a test dataset. The process involves loading the trained model, preparing the test dataset, creating prompts for inference, and generating predictions. The final output is then saved to an Excel file.
 
-## Colab Link
-You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a0PDiQsyB0tCvYR0GED1E7QXTqyPAay0)
 
 ## Dependencies
 - **bitsandbytes, accelerate, loralib**: Libraries for efficient training and fine-tuning of language models.
