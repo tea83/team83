@@ -41,14 +41,5 @@ This function processes batches of images and corresponding text descriptions to
 - `image_embeddings`: Tensor containing image embeddings.
 - `text_embeddings`: Tensor containing text embeddings.
 
-## Usage
-
-1. Import the necessary libraries and functions:
-
-```python
-from PIL import Image
-import torch
-from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
-from tqdm import tqdm
 
 
