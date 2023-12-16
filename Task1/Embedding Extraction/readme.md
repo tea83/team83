@@ -1,20 +1,52 @@
-# CLIP Embeddings Generator
+# CLIP Model Embedding Processor
 
-This Python script provides functionality to generate image and text embeddings using the CLIP (Contrastive Language-Image Pre-training) model from OpenAI. The code utilizes the Hugging Face Transformers library for easy integration with CLIP.
+This Python script utilizes the CLIP (Contrastive Language-Image Pre-training) model from the Hugging Face Transformers library to generate embeddings for images and corresponding text descriptions. The code processes images and text in batches, allowing for efficient computation.
+
+## Dependencies
+
+- `PIL` (Python Imaging Library): For working with images.
+- `torch`: PyTorch library for deep learning.
+- `transformers`: Hugging Face Transformers library for natural language processing models.
+- `tqdm`: A library for creating progress bars in the console.
 
 ## Functions
 
 ### `load_clip_model()`
 
-This function loads the CLIP processor, model, and tokenizer. It determines the computing device (GPU if available, otherwise CPU) and returns these components along with the tokenizer.
+This function loads the CLIP processor, tokenizer, and model. It also determines the device to run the model on (cuda if available, otherwise cpu).
+
+#### Returns
+
+- `processor`: CLIP Processor instance.
+- `model`: CLIP Model instance.
+- `device`: The device (cuda or cpu).
+- `tokenizer`: CLIPTokenizer instance.
 
 ### `process_batches(processor, tokenizer, model, device, image_paths, text_descriptions, batch_size)`
 
-This function processes batches of images and text descriptions to obtain their respective embeddings using the CLIP model. It takes in the CLIP processor, tokenizer, model, computing device, image paths, text descriptions, and batch size as inputs. It returns concatenated image and text embeddings.
+This function processes batches of images and corresponding text descriptions to generate image and text embeddings using the CLIP model.
 
-### `get_embeddings(df, batch_size)`
+#### Parameters
 
-This function acts as an interface for obtaining CLIP embeddings from a given DataFrame. It takes in the DataFrame `df` containing image paths and relevant text information, along with the desired batch size. It internally calls `load_clip_model()` and `process_batches()` to generate image and text embeddings. The resulting embeddings are printed and returned.
+- `processor`: CLIP Processor instance.
+- `tokenizer`: CLIPTokenizer instance.
+- `model`: CLIP Model instance.
+- `device`: The device to run the model on.
+- `image_paths`: List of file paths to the images.
+- `text_descriptions`: List of text descriptions corresponding to the images.
+- `batch_size`: The batch size for processing.
+
+#### Returns
+
+- `image_embeddings`: Tensor containing image embeddings.
+- `text_embeddings`: Tensor containing text embeddings.
 
 ## Usage
-You may open the relavent notebook and run it through. 
+
+1. Import the necessary libraries and functions:
+
+```python
+from PIL import Image
+import torch
+from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
+from tqdm import tqdm
