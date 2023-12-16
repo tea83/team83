@@ -1,21 +1,7 @@
-# Repository Name
+# team83
 
-## Overview
 
-This repository contains code and notebooks for two distinct tasks. The repository is organized into three main folders:
-
-### Task 1
-
-#### 1.1 `train` Folder
-- This folder contains a Jupyter notebook (`xgboost.ipynb`) where an XGBoost model is trained to predict likes based on the provided data.
-
-#### 1.2 `inference` Folder
-- Inside this folder, there are notebooks (`inference_notebook1.ipynb`, `inference_notebook2.ipynb`, etc.) for predicting likes for the final test data using the trained model.
-
-#### 1.3 `faiss` Folder
-- This folder includes a Jupyter notebook (`faiss_search.ipynb`) demonstrating the usage of the Faiss library for similarity search.
-
-### Task 2
+### Task 2- Generating Content
 
 #### 2.1 `embedding_extraction` Folder
 - This folder includes notebooks related to embedding extraction. The exact content and purpose of these notebooks are not detailed in the provided information.
@@ -30,16 +16,6 @@ This repository contains code and notebooks for two distinct tasks. The reposito
 - Inside this folder, there are two notebooks:
   - `Prompt_Engineering.ipynb`: Captions generated from the pretrained model are concatenated with inferred company, date-time for temporal relevance, and likes. Two strategies, PEFT (Prefix-Tuning with Early Fine-tuning) and LoRA (Low-Rank Adaptive Weights), are applied for better finetuning and efficiency.
   - `Finetuning_Bloom_7b.ipynb`: The Stable Diffusion XL model is fine-tuned using Low-Rank Adaptive Weights (LoRA).
-
-### Extra Folder
-
-#### `image_generation` Folder
-- This folder contains a notebook (name not specified) where the Stable Diffusion XL model is fine-tuned using Low-Rank Adaptive Weights (LoRA) for image generation.
-
-### Additional Notebook
-
-#### `adobe_eda.ipynb`
-- This Jupyter notebook provides exploratory data analysis (EDA) of the provided data from Adobe.
 
 ## How to Use
 
