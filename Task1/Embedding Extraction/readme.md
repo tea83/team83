@@ -50,18 +50,19 @@ from PIL import Image
 import torch
 from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 from tqdm import tqdm
-# EfficientNet Image Embedding Generator
 
-This Python script provides functions to load a pre-trained EfficientNet model, preprocess images, and generate image embeddings using the model. It also includes a function to generate embeddings for a DataFrame containing image file paths.
+# EfficientNet Image Embedding Processor
+
+This Python script utilizes the EfficientNet model from the `efficientnet_pytorch` library to generate image embeddings. The code provides functions to load a pre-trained EfficientNet model, preprocess images, and generate embeddings for a batch of images or a DataFrame containing image file paths.
 
 ## Dependencies
 
-- `pandas`: Data manipulation library.
-- `torch`: PyTorch library for deep learning.
-- `torchvision`: PyTorch's library for computer vision tasks.
-- `efficientnet_pytorch`: EfficientNet PyTorch implementation.
-- `PIL`: Python Imaging Library for image processing.
-- `tqdm`: A library for creating progress bars in the console.
+- **pandas**: Data manipulation library.
+- **torch**: PyTorch library for deep learning.
+- **torchvision**: PyTorch's library for computer vision tasks.
+- **efficientnet_pytorch**: EfficientNet PyTorch implementation.
+- **PIL**: Python Imaging Library for image processing.
+- **tqdm**: A library for creating progress bars in the console.
 
 ## Functions
 
@@ -123,12 +124,12 @@ This function generates image embeddings for a DataFrame containing image file p
 
 ## Usage
 
-1. Import the necessary libraries and functions:
+1. **Import the necessary libraries and functions:**
 
-```python
-import pandas as pd
-import torch
-from torchvision import transforms
-from efficientnet_pytorch import EfficientNet
-from PIL import Image
-from tqdm import tqdm
+   ```python
+   import pandas as pd
+   import torch
+   from torchvision import transforms
+   from efficientnet_pytorch import EfficientNet
+   from PIL import Image
+   from tqdm import tqdm
