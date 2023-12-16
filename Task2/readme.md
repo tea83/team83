@@ -23,3 +23,33 @@
 
 Feel free to explore each folder and notebook for detailed implementation and documentation.
 
+
+# Image Captioning Notebook Documentation
+
+This notebook focuses on image captioning using the Salesforce Blip Image Captioning model. The process involves reading a dataset from a CSV file, where each row contains information about an image, including the path to the image file. The notebook then uses the Blip Image Captioning model to generate captions for each image and saves the results in a new CSV file.
+
+## Colab Link
+You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OrionXV/InterIITAdobe/blob/main/task2/ImageCaptionNotebook.ipynb)
+
+## Dependencies
+- **requests**: A library for making HTTP requests in Python.
+- **PIL**: Python Imaging Library for image processing.
+- **transformers**: Hugging Face's Transformers library for natural language processing.
+- **torch**: The PyTorch deep learning library.
+- **pandas**: A data manipulation library for data analysis.
+- **numpy**: A library for numerical operations in Python.
+- **tqdm**: A library for displaying progress bars.
+
+## Dataset Preparation
+The notebook reads a dataset from a CSV file (`somepath.csv`) using the pandas library. It initializes a new column (`img_caption`) for storing image captions, which is initially set to None.
+
+## Model Initialization
+The notebook initializes the Blip Image Captioning model (`Salesforce/blip-image-captioning-large`) and its processor from the Hugging Face Transformers library. The model is loaded onto the GPU if available.
+
+## Image Captioning Function
+The notebook defines a function (`image_captioner`) that takes an image path as input, opens the image, and generates a caption using the Blip Image Captioning model. The captions are then stored in the `img_caption` column of the DataFrame.
+
+## Caption Generation
+The notebook iterates through the DataFrame, generating captions for each image using the defined function. The progress is displayed using tqdm. The resulting DataFrame is then saved to a new CSV file (`captioned_dataset.csv`).
+
+For further details and updates, refer to the notebook code and associated documentation in the provided Colab link.
