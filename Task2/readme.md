@@ -83,4 +83,37 @@ The notebook trains the language model using the `transformers.Trainer` class. I
 ## Inference with the Fine-tuned Model
 The notebook demonstrates how to load the fine-tuned model from the Hugging Face Model Hub and perform inference on a sample input.
 
+# Inference Notebook Documentation
+
+This notebook is focused on performing inference using a fine-tuned language model (`bloom-7b1-lora-tagger-for-tweet-generation`) on a test dataset. The process involves loading the trained model, preparing the test dataset, creating prompts for inference, and generating predictions. The final output is then saved to an Excel file.
+
+## Colab Link
+You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a0PDiQsyB0tCvYR0GED1E7QXTqyPAay0)
+
+## Dependencies
+- **bitsandbytes, accelerate, loralib**: Libraries for efficient training and fine-tuning of language models.
+- **transformers**: Hugging Face's Transformers library for natural language processing.
+- **peft**: Library for efficient training of transformers.
+- **datasets**: A library for working with various natural language processing datasets.
+
+## Test Dataset Preparation
+The notebook starts by fetching the test dataset (`test.csv`) from Google Drive and loading it into a DataFrame. The first few rows of the dataset are displayed for inspection.
+
+## Model Loading
+The fine-tuned model (`bloom-7b1-lora-tagger-for-tweet-generation-1100iter`) is loaded using the PEFT library for efficient training. The model is then configured with the PEFT model.
+
+## Test Dataset Tokenization and Cleaning
+The test dataset is tokenized using the Hugging Face `transformers` library, and necessary cleaning steps are applied to handle missing values.
+
+## Prompt Creation
+Prompts for generating predictions are created by merging columns from the dataset.
+
+## Prediction Generation
+The notebook generates predictions for each prompt using the fine-tuned language model. The output tokens are then decoded, and the resulting predictions are stored in a list.
+
+## Post-processing and Saving Predictions
+The predictions are post-processed to extract the relevant information. The final predictions are then saved to an Excel file (`output_0-500.xlsx`).
+
+## Additional Information
+
 For further details and updates, refer to the notebook code and associated documentation in the provided Colab link.
