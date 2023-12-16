@@ -14,9 +14,6 @@ images tailored to surpass desired metrics.
 
 This notebook is designed for training a model for text-to-image generation using the [stabilityai/sdxl-turbo](https://huggingface.co/stabilityai/sdxl-turbo) model on the Adobe Image Prediction dataset. The training process involves utilizing the [diffusers](https://github.com/CompVis/diffusers) library, specifically the `AutoPipelineForText2Image` class for text-to-image generation.
 
-## Colab Link
-You can view and run this notebook on Google Colab by clicking the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OrionXV/InterIITAdobe/blob/main/extra/AdobeImagePredictionTrain.ipynb)
-
 ## Dependencies
 - **numpy**: A library for numerical operations in Python.
 - **pandas**: A data manipulation library for data analysis.
