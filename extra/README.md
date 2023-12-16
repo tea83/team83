@@ -4,7 +4,7 @@ generating images seamlessly integrated with tweet
 narratives to engage the target audience.
 Next, we fine-tune the Stable Diffusion XL
 model using Low-Rank Adaptive Weights (LoRA).
-This advanced technique adjusts parameters, enhancing training efficiency and adapting to social
+This advanced technique adjusts parameters, enhancing training efficiency and adapting to social
 media nuances. The synergy of prompt engineering
 and LoRA fine-tuning optimizes content relevance
 and engagement, producing visually compelling
